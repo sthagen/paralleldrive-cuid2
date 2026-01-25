@@ -3,7 +3,7 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [3.0.7] - 2026-01-25
+## [3.2.1] - 2026-01-25
 
 ### Fixed
 
@@ -181,7 +181,7 @@ Use v2.3.1 for CommonJS or v3.0.0+ for ESM.
 - Configurable length (default 24 characters)
 - Customizable fingerprints and random functions
 
-[3.0.7]: https://github.com/paralleldrive/cuid2/compare/v3.0.2...v3.0.7
+[3.2.1]: https://github.com/paralleldrive/cuid2/compare/v3.2.0...v3.2.1
 [3.0.2]: https://github.com/paralleldrive/cuid2/compare/v3.0.0...v3.0.2
 [3.0.0]: https://github.com/paralleldrive/cuid2/compare/v2.3.1...v3.0.0
 [2.3.1]: https://github.com/paralleldrive/cuid2/compare/v2.2.2...v2.3.1
