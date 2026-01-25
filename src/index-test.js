@@ -151,7 +151,7 @@ describe("bufToBigInt", async (assert) => {
 
   {
     const actual = bufToBigInt(
-      new Uint8Array([0xff, 0xff, 0xff, 0xff])
+      new Uint8Array([0xff, 0xff, 0xff, 0xff]),
     ).toString();
     const expected = "4294967295";
 

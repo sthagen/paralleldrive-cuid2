@@ -84,7 +84,7 @@ const hasSlug = args.includes("--slug");
 const lengthArg = getArgValue("--length");
 const fingerprintArg = getArgValue("--fingerprint");
 const countArg = args.find(
-  (arg) => !arg.startsWith("--") && arg !== lengthArg && arg !== fingerprintArg
+  (arg) => !arg.startsWith("--") && arg !== lengthArg && arg !== fingerprintArg,
 );
 const count = parseInt(countArg) || 1;
 

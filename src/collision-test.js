@@ -29,7 +29,7 @@ async function createIdPoolInWorker(max) {
 // in a worker thread.
 const createIdPoolsInWorkers = (numWorkers, max) => {
   return Promise.all(
-    Array.from({ length: numWorkers }, () => createIdPoolInWorker(max))
+    Array.from({ length: numWorkers }, () => createIdPoolInWorker(max)),
   );
 };
 

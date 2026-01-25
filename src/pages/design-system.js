@@ -235,7 +235,9 @@ export const Card = ({ children, variant = "default", ...props }) => {
           padding: 1.5rem;
           margin-bottom: 1.5rem;
           box-shadow: var(--shadow-sm);
-          transition: box-shadow 0.2s ease, border-color 0.2s ease;
+          transition:
+            box-shadow 0.2s ease,
+            border-color 0.2s ease;
         }
         .card:hover {
           box-shadow: var(--shadow-md);
@@ -541,7 +543,7 @@ export const DarkModeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() =>
     typeof window !== "undefined" && window.matchMedia
       ? window.matchMedia("(prefers-color-scheme: dark)").matches
-      : true
+      : true,
   );
 
   const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
@@ -682,14 +684,17 @@ export const GlobalStyles = () => {
 
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-          "Helvetica Neue", sans-serif;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+          "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: var(--bg-secondary);
         color: var(--text-primary);
-        transition: background-color 0.2s ease, color 0.2s ease;
+        transition:
+          background-color 0.2s ease,
+          color 0.2s ease;
       }
 
       html {

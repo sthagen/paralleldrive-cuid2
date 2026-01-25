@@ -3,11 +3,17 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [3.0.7] - 2026-01-25
 
 ### Fixed
 
 - Fix typo in package.json exports field: `./package.json` path was incorrectly specified
+- Fix TypeScript compilation error (TS1203) by replacing export = with named exports in index.d.ts
+
+### Updated
+
+- Update AI development framework (aidd) to v2.5.0 for enhanced security reviews
+- Update all devDependencies to latest versions (@types/node, @types/react, eslint, eslint-config-next, eslint-config-prettier, eslint-plugin-prettier, next, prettier, react, react-dom, release-it, riteway, updtr, watch)
 
 ## [3.0.2] - 2025-10-27
 
@@ -175,6 +181,7 @@ Use v2.3.1 for CommonJS or v3.0.0+ for ESM.
 - Configurable length (default 24 characters)
 - Customizable fingerprints and random functions
 
+[3.0.7]: https://github.com/paralleldrive/cuid2/compare/v3.0.2...v3.0.7
 [3.0.2]: https://github.com/paralleldrive/cuid2/compare/v3.0.0...v3.0.2
 [3.0.0]: https://github.com/paralleldrive/cuid2/compare/v2.3.1...v3.0.0
 [2.3.1]: https://github.com/paralleldrive/cuid2/compare/v2.2.2...v2.3.1

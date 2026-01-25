@@ -52,7 +52,7 @@ const validateBumpType = (bumpType) => {
     throw createError({
       ...ValidationError,
       message: `Invalid bump type: ${bumpType}. Valid options: ${config.validBumpTypes.join(
-        ", "
+        ", ",
       )}`,
     });
   }
@@ -80,7 +80,7 @@ const validateBranch = (branch) => {
     throw createError({
       ...ValidationError,
       message: `Not on allowed branch. Current: ${branch}, Allowed: ${allowedBranches.join(
-        ", "
+        ", ",
       )}`,
     });
   }
@@ -137,7 +137,7 @@ const createRelease = ({ argv, defaultType }) => {
   validateBranch(currentBranch);
 
   console.log(
-    `🎯 Preparing ${bumpType} (${semverType}) release on branch ${currentBranch}...`
+    `🎯 Preparing ${bumpType} (${semverType}) release on branch ${currentBranch}...`,
   );
 
   // Use release-it to handle the complete release workflow
