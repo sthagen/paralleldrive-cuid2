@@ -64,7 +64,7 @@ const hash = (input = "") => {
 };
 
 const alphabet = Array.from({ length: 26 }, (x, i) =>
-  String.fromCharCode(i + 97)
+  String.fromCharCode(i + 97),
 );
 
 const randomLetter = (rand) => alphabet[Math.floor(rand() * alphabet.length)];
@@ -79,8 +79,8 @@ const createFingerprint = ({
   globalObj = typeof global !== "undefined"
     ? global
     : typeof window !== "undefined"
-    ? window
-    : {},
+      ? window
+      : {},
   random: rand = random,
 } = {}) => {
   const globals = Object.keys(globalObj).toString();
@@ -110,7 +110,7 @@ const init = ({
 } = {}) => {
   if (length > bigLength) {
     throw new Error(
-      `Length must be between 2 and ${bigLength}. Received: ${length}`
+      `Length must be between 2 and ${bigLength}. Received: ${length}`,
     );
   }
   return function cuid2() {
@@ -142,22 +142,18 @@ function lazy(fn) {
   };
 }
 
-const isCuid = (id, { minLength = 2, maxLength = bigLength } = {}) => {
-  const length = id.length;
+const isCuid = (
+  id,
+  { minLength = 2, maxLength = bigLength, length = id?.length } = {},
+) => {
   const regex = /^[a-z][0-9a-z]+$/;
 
-  try {
-    if (
-      typeof id === "string" &&
-      length >= minLength &&
-      length <= maxLength &&
-      regex.test(id)
-    )
-      return true;
-  } finally {
-  }
-
-  return false;
+  return (
+    typeof id === "string" &&
+    length >= minLength &&
+    length <= maxLength &&
+    regex.test(id)
+  );
 };
 
 export const getConstants = () => ({ defaultLength, bigLength });

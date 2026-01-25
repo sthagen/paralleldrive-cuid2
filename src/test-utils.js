@@ -6,14 +6,14 @@ export const info = (txt) => console.log(`# - ${txt}`);
 export const idToBigInt = (id, _, __, radix = 36) =>
   [...id.toString()].reduce(
     (r, v) => r.multipliedBy(radix).plus(parseInt(v, radix)),
-    new BigNumber(0)
+    new BigNumber(0),
   );
 
 export const buildHistogram = (numbers, bucketCount = 20) => {
   const buckets = Array(bucketCount).fill(0);
   let counter = 1;
   const bucketLength = Math.ceil(
-    Number(new BigNumber(36).pow(23).dividedBy(bucketCount))
+    Number(new BigNumber(36).pow(23).dividedBy(bucketCount)),
   );
 
   for (const number of numbers) {
