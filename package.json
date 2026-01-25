@@ -70,8 +70,8 @@
     "react-dom": "^19.2.3",
     "release-it": "^19.2.4",
     "riteway": "^9.0.0",
-    "updtr": "^4.1.0",
-    "watch": "^1.0.2"
+    "updtr": "^4.0.0",
+    "watch": "^0.13.0"
   },
   "dependencies": {
     "@noble/hashes": "^2.0.1",
