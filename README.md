@@ -156,7 +156,7 @@ console.log(
 
 ## Trusted by Millions of Apps
 
-Cuid2 is trusted by millions of apps and attracts ~6.5 million weekly downloads.
+Cuid2 is trusted by millions of apps and attracts over 10 million weekly downloads.
 
 ## Why Cuid2?
 
