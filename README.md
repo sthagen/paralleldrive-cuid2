@@ -463,11 +463,6 @@ In Jest, features like Uint8Array/TextEncoder/TextDecoder may be available in th
 
 Note that this issue may impact any package that relies on the TextEncoder or TextDecoder standards. If you would like to use a simple test runner that just works, try [Riteway](https://github.com/paralleldrive/riteway).
 
-## Sponsors
+---
 
-This project is made possible by:
-
-- Your donations:
-  - [Pay by credit/debit card with invoiced receipt](https://buy.stripe.com/cNi3cjgyNbY02magKZcwg05)
-  - paralleldrive.eth (Ethereum mainnet)
-- [EricElliottJS.com](https://ericelliottjs.com) - Learn JavaScript on demand with videos and interactive lessons.
+Made with 🖤 by [Parallel Drive](https://paralleldrive.com)
