@@ -236,7 +236,7 @@ The original Cuid served us well for more than a decade. We used it across 2 dif
 
 Available entropy is the maximum number of unique ids that can be generated. Generally more entropy leads to lower probability of collision. For simplicity, we will assume a perfectly random distribution in the following discussion.
 
-The original Cuid ran for more than 10 years in across thousands of software implementations with zero confirmed collision reports, in some cases with more than 100 million users generating ids.
+The original Cuid ran for more than 10 years across thousands of software implementations with zero confirmed collision reports, in some cases with more than 100 million users generating ids.
 
 The original Cuid had a maximum available entropy of about `3.71319E+29` (assuming 1 id per session). That's already a really big number, but the maximum recommended entropy in Cuid2 is `4.57458E+49`. For reference, that's about the same entropy difference as the size of a mosquito compared to the distance from earth to the nearest star. Cuid2 has a default entropy of `1.62155E+37`, which is a significant increase from the original Cuid and is comparable to the difference between the size of a baseball and the size of the moon.
 
